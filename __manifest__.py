@@ -7,8 +7,7 @@
     'license': 'LGPL-3',
     'depends': ['base'],
     'data': [
-        
-        
+       
     ],
     'application': True,
     'installable': True,
