@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Report action: shows under the model's Print menu -->
+    <record id="action_report_medical_doctors" model="ir.actions.report">
+        <field name="name">گزارش تستی</field>
+        <field name="model">medical.doctors</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">doctors_building.report_medical_doctors</field>
+        <field name="binding_model_id" ref="model_medical_doctors"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <!-- Main template: loops over docs and calls the document template -->
+    <template id="report_medical_doctors">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="doctors_building.report_medical_doctors_document" t-lang="doc.env.user.lang"/>
+            </t>
+        </t>
+    </template>
+
+    <!-- Document template -->
+    <template id="report_medical_doctors_document">
+        <t t-call="web.external_layout">
+            <div class="page">
+                <div class="oe_structure"/>
+                <h2><span t-field="doc.name"/></h2>
+                <div class="oe_structure"/>
+            </div>
+        </t>
+    </template>
+
+</odoo>
