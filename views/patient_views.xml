@@ -42,7 +42,6 @@
                             <group>
                                 <field name="birth_date"/>
                                 <field name="phone"/>
-                                <field name="email"/>
                                 <field name="address"/>
                             </group>
 

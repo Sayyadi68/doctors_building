@@ -8,10 +8,10 @@
     'depends': ['base'],
     'data': [
 
-    'views/doctors_views.xml'
-    'views/patient_views.xml'
-    'views/visit_result_views'
-    'views/manu.xml'
+    'views/doctors_views.xml',
+    'views/patient_views.xml',
+    'views/visit_result_views.xml',
+    'views/menu.xml'
 
     ],
     'application': True,
