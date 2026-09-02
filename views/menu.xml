@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="doctors_building_menu_root"
+        name="ساختمان پزشکان"
+        sequence="1"/>
+
+    <menuitem
+        id="doctors_building_doctors_menu"
+        name="پزشکان"
+        action="action_medical_doctors"
+        parent="doctors_building_menu_root"
+        sequence="1"/>
+
+    <menuitem
+        id="doctors_building_patient_menu"
+        name="بیماران"
+        action="action_medical_patient"
+        parent="doctors_building_menu_root"
+        sequence="2"/>
+
+    <menuitem
+        id="doctors_building_visit_menu"
+        name="ویزیت‌ها"
+        action="action_visit_result"
+        parent="doctors_building_menu_root"
+        sequence="3"/>
+
+</odoo>
