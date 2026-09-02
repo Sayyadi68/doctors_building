@@ -1,4 +1,4 @@
-from odoo import models, fields, api
+from odoo import models, fields
 
 
 class VisitResult(models.Model):
@@ -11,4 +11,3 @@ class VisitResult(models.Model):
     factor_consultation_fee = fields.Float(string="هزینه وزیت" , default="280000")
     Status = fields.Selection(string="وضعیت", required=True, selection=[('pending','در حال انجام'),('done','ویزیت انجام شده است'),('cancel','لغو شده')],)
     is_active = fields.Boolean(default=True)
-	
