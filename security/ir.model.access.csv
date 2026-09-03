@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+doctors_building.access_medical_doctors,access_medical_doctors,doctors_building.model_medical_doctors,base.group_user,1,1,1,1
+doctors_building.access_visit_result,access_visit_result,doctors_building.model_visit_result,base.group_user,1,1,1,1
+doctors_building.access_medical_patient,access_medical_patient,doctors_building.model_medical_patient,base.group_user,1,1,1,1

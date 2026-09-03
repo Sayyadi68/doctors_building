@@ -26,7 +26,7 @@ class Doctors(models.Model):
     
     room_number = fields.Char(string="شماره اتاق")
     
-    working_schedual_ids = fields.One2many(string="روز های فعال")
+    #working_schedual_ids = fields.One2many(string="روز های فعال")
     
     description = fields.Char(string="توضیحات")
     
