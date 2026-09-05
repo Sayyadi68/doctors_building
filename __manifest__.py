@@ -10,10 +10,10 @@
         'security/ir.model.access.csv',
 
         'views/doctors_views.xml',
-        'views/menu.xml',
         'views/patient_views.xml',
         'views/visit_result_views.xml',
-        
+        'views/menu.xml',
+
         'reports/medical_doctors_reports.xml',
     ],
     'application': True,

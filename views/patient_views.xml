@@ -43,6 +43,7 @@
                                 <field name="birth_date"/>
                                 <field name="phone"/>
                                 <field name="address"/>
+                                <field name="age"/>
                             </group>
 
                         </group>
@@ -51,6 +52,7 @@
 
                             <page string="توضیحات">
                                 <field name="description"/>
+                                <field name="insurance"/>
                             </page>
 
                         </notebook>
